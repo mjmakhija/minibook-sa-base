@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+
+<TilePane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hm.minibook.controller.AddCompanyYearController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="122.0" prefWidth="478.0">
+         <children>
+            <TextField fx:id="txtName" layoutX="149.0" layoutY="8.0" prefHeight="22.0" prefWidth="247.0" />
+            <DatePicker fx:id="txtDateFrom" layoutX="149.0" layoutY="35.0" prefHeight="22.0" prefWidth="247.0" />
+            <DatePicker fx:id="txtDateTo" layoutX="149.0" layoutY="63.0" prefHeight="22.0" prefWidth="247.0" />
+            <Button fx:id="btnSave" defaultButton="true" layoutX="150.0" layoutY="91.0" mnemonicParsing="false" text="%save" />
+            <Button fx:id="btnCancel" cancelButton="true" layoutX="220.0" layoutY="91.0" mnemonicParsing="false" text="%cancel" />
+            <Label layoutX="7.0" layoutY="12.0" text="%company_name" />
+            <Label layoutX="7.0" layoutY="39.0" text="%date_from_financial_year" />
+            <Label layoutX="7.0" layoutY="67.0" text="%date_to_financial_year" />
+            <Label layoutX="401.0" layoutY="39.0" text="DD-MM-YYYY" />
+            <Label layoutX="401.0" layoutY="67.0" text="DD-MM-YYYY" />
+         </children>
+      </AnchorPane>
+   </children>
+</TilePane>

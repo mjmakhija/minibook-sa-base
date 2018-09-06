@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+
+<TilePane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefColumns="1" prefHeight="443.0" prefRows="1" prefWidth="662.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hm.minibook.controller.GatewayController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="258.0" prefWidth="640.0">
+         <children>
+            <ListView fx:id="lstCompany" layoutX="9.0" layoutY="21.0" prefHeight="200.0" prefWidth="250.0">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="%add" />
+                        <MenuItem mnemonicParsing="false" text="%edit" />
+                        <MenuItem mnemonicParsing="false" text="%delete" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </ListView>
+            <ListView fx:id="lstYear" layoutX="264.0" layoutY="21.0" prefHeight="200.0" prefWidth="250.0">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="%add" />
+                        <MenuItem mnemonicParsing="false" text="%edit" />
+                        <MenuItem mnemonicParsing="false" text="%delete" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </ListView>
+            <Button fx:id="btnSelect" defaultButton="true" layoutX="520.0" layoutY="226.0" minWidth="125.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="125.0" text="%select" />
+            <Button fx:id="btnAddCompany" layoutX="9.0" layoutY="226.0" mnemonicParsing="false" text="%add" />
+            <Button fx:id="btnEditCompany" layoutX="79.0" layoutY="226.0" mnemonicParsing="false" text="%edit" />
+            <Button fx:id="btnDeleteCompany" layoutX="149.0" layoutY="226.0" mnemonicParsing="false" text="%delete" />
+            <Button fx:id="btnAddYear" layoutX="263.0" layoutY="226.0" mnemonicParsing="false" text="%add" />
+            <Button fx:id="btnEditYear" layoutX="333.0" layoutY="226.0" mnemonicParsing="false" text="%edit" />
+            <Button fx:id="btnDeleteYear" layoutX="403.0" layoutY="226.0" mnemonicParsing="false" text="%delete" />
+            <Button fx:id="btnActivation" layoutX="520.0" layoutY="21.0" minWidth="125.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="112.0" text="%activation" />
+            <Button fx:id="btnChangePassword" layoutX="520.0" layoutY="49.0" minWidth="125.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="112.0" text="%change_password" />
+            <Button fx:id="btnUpdate" layoutX="520.0" layoutY="77.0" minWidth="125.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="112.0" text="%update" />
+            <Label layoutX="9.0" layoutY="2.0" text="%company" />
+            <Label layoutX="264.0" layoutY="2.0" text="%financial_year" />
+         </children>
+      </AnchorPane>
+   </children>
+</TilePane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="265.0" maxWidth="500.0" minHeight="265.0" minWidth="500.0" prefHeight="265.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hm.minibook.controller.SplashScreenController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="250.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
+      <ProgressBar layoutY="250.0" prefHeight="15.0" prefWidth="500.0" />
+      <Label fx:id="label" layoutX="4.0" layoutY="234.0" text="Label">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

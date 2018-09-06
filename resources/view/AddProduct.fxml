@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+
+<TilePane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hm.minibook.controller.AddProductController">
+	<children>
+		<AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="363.0">
+			<children>
+				<TextField fx:id="txtName" layoutX="101.0" layoutY="7.0" prefHeight="22.0" prefWidth="247.0" />
+				<ComboBox fx:id="cmbUnit" layoutX="101.0" layoutY="35.0" prefHeight="22.0" prefWidth="247.0" />
+				<TextField fx:id="txtHSNCode" layoutX="101.0" layoutY="63.0" prefHeight="22.0" prefWidth="247.0" />
+				<TextField fx:id="txtPurchasePrice" layoutX="101.0" layoutY="90.0" prefHeight="22.0" prefWidth="247.0" />
+				<TextField fx:id="txtSalePrice" layoutX="101.0" layoutY="118.0" prefHeight="22.0" prefWidth="247.0" />
+				<TextField fx:id="txtMRP" layoutX="101.0" layoutY="146.0" prefHeight="22.0" prefWidth="247.0" />
+				<ComboBox fx:id="cmbTax" layoutX="101.0" layoutY="173.0" prefHeight="22.0" prefWidth="247.0" />
+				<ComboBox fx:id="cmbProductCategory" layoutX="101.0" layoutY="200.0" prefHeight="22.0" prefWidth="247.0" />
+				<TextField fx:id="txtNote" layoutX="101.0" layoutY="227.0" prefHeight="22.0" prefWidth="247.0" />
+				<Button fx:id="btnSave" defaultButton="true" layoutX="5.0" layoutY="537.0" mnemonicParsing="false" text="%save" />
+				<Button fx:id="btnCancel" cancelButton="true" layoutX="75.0" layoutY="537.0" mnemonicParsing="false" text="%cancel" />
+				<Label layoutX="5.0" layoutY="11.0" text="%name" />
+				<Label layoutX="5.0" layoutY="39.0" text="%unit" />
+				<Label layoutX="5.0" layoutY="67.0" text="%hsn_code" />
+				<Label layoutX="5.0" layoutY="122.0" text="%sale_price" />
+				<Label layoutX="5.0" layoutY="150.0" text="%mrp" />
+				<Label layoutX="5.0" layoutY="231.0" text="%note" />
+				<Label layoutX="5.0" layoutY="94.0" text="%purchase_price" />
+				<Label layoutX="5.0" layoutY="201.0" text="%category" />
+				<Label layoutX="5.0" layoutY="177.0" text="%tax" />
+            <TitledPane collapsible="false" layoutX="5.0" layoutY="255.0" prefHeight="276.0" prefWidth="345.0" text="%opening_stock">
+               <content>
+                  <AnchorPane prefHeight="141.0" prefWidth="343.0" style="-fx-padding: 0;">
+                     <children>
+                        <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="5.0" layoutY="51.0" prefHeight="195.0" prefWidth="261.0">
+                           <content>
+                              <TableView fx:id="tvOpeningStock" prefHeight="168.0" prefWidth="200.0" />
+                           </content>
+                        </ScrollPane>
+                        <TextField fx:id="txtQuantity" layoutX="5.0" layoutY="20.0" prefHeight="22.0" prefWidth="100.0" />
+                        <Label layoutX="5.0" layoutY="5.0" text="%quantity" />
+                        <TextField fx:id="txtRate" layoutX="110.0" layoutY="20.0" prefHeight="22.0" prefWidth="100.0" />
+                        <Label layoutX="110.0" layoutY="5.0" text="%rate" />
+                        <Button fx:id="btnSaveOS" layoutX="215.0" layoutY="20.0" mnemonicParsing="false" text="%save" />
+                        <Button fx:id="btnEditOS" layoutX="273.0" layoutY="51.0" mnemonicParsing="false" text="%edit" />
+                        <Button fx:id="btnDeleteOS" layoutX="273.0" layoutY="79.0" mnemonicParsing="false" text="%delete" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+			
+			</children>
+		</AnchorPane>
+	</children>
+</TilePane>
